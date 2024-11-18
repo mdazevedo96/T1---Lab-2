@@ -15,7 +15,8 @@ b. A média de livros lidos pelos entrevistados.
   */
 
 void leVetor (int tamanho, Usuario* vet){
-    for(int i=0; i<tamanho; i++){
+    int i;
+	for(i=0; i<tamanho; i++){
       printf("Usuario %d:\n", i);
       printf("Digite a idade: ");
       scanf("%d", &vet[i].idade);
@@ -30,7 +31,8 @@ void leVetor (int tamanho, Usuario* vet){
   */
 int calculaQtidadeLivros (int tamanho, Usuario* vet){
     int total = 0;
-    for(int i=0; i<tamanho; i++){
+    int i;
+    for(i=0; i<tamanho; i++){
       if(vet[i].idade < 18){
         total+=vet[i].qtdade;
       }
@@ -46,7 +48,8 @@ int calculaQtidadeLivros (int tamanho, Usuario* vet){
 float calculaMedia (int tamanho, Usuario* vet){
   int total=0;
   float media=0;
-  for(int i=0; i<tamanho; i++){
+  int i;
+  for(i=0; i<tamanho; i++){
     total+=vet[i].qtdade;
   }
     media = total/tamanho;
