@@ -6,7 +6,7 @@ int main(){
     float a, b, c, rSoma, rProduto, rMedia;
 
     while(1){
-        printf("Digite três valores reais: ");
+        printf("Digite tres valores reais: ");
         scanf("%f %f %f", &a, &b, &c);
 
         if (a >= b || b >= c) {
@@ -20,7 +20,7 @@ int main(){
 
             printf("Soma: %.2f\n", rSoma);
             printf("Produto: %.2f\n", rProduto);
-            printf("Média: %.2f\n", rMedia);
+            printf("Media: %.2f\n", rMedia);
             printf("-------------------\n");
         }
     }
